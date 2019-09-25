@@ -5,12 +5,10 @@ console.log("the number is " + autoNum);
 //button stuff + input + restart
 const disable=() => {
    document.getElementById("guessField").disabled = true;
-   document.getElementById("myBtn2").disabled = true;
    console.log("did disable");
    }
 const enable=() => {
    document.getElementById("guessField").disabled = false;
-   document.getElementById("myBtn2").disabled = false;
    console.log("did enable");
    }
 const restart=() => {
