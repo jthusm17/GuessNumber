@@ -1,7 +1,8 @@
 <!DOCTYPE html> 
 <html> 
 <head> 
-<meta charset="utf-8"> 
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
 <title>Number Guessing</title> 
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -19,23 +20,28 @@ h4 {
     color: purple;
     }
 </style>
+<div class="container">
+    <h1>Guess Number between 1 and 15</h1> 
+    <h4 id="guess2">Guess#: 1</h4>
+    <h4 id="guess1">...</h4> 
+</div>
 
-<h1>Guess Number between 1 and 15</h1> 
-<h4 id="guess2">Guess#: 1</h4>
-<h4 id="guess1">...</h4> 
-  
-<div class="form"> 
+<div class="container"> 
     <label for="guessField">Enter a guess: </label> 
     <input type = "text" id = "guessField" class = "guessField"> 
-    <button type="button" enabled id="myBtn2" onclick="timePat()">Submit</button>
-    <button type="button" disabled id="myBtn1" onclick="restart()">restart</button> 
+    <button type="button" enabled id="myBtn2" class="btn btn-primary btn-lg crazy fast" onclick="timePat()">
+        <span id="spindin" aria-hidden="true" class="spinner-border spinner-border-sm"></span>
+        Submit</button>
+    <button type="button" disabled id="myBtn1" class="btn btn-info" onclick="restart()">restart
+    </button> 
 </div> 
   
 <script src="javascript.js"></script>
 
 
-<p>Input your guess into the text box above.</p>
-
+<div class="container">
+    <p>Input your guess into the text box above.</p>
+</div>
 </body>
 
 </html>
