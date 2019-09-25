@@ -2,7 +2,7 @@
 let autoNum = Math.floor(Math.random() * 15 + 1);
 console.log("the number is " + autoNum);
 
-
+//button stuff + input + restart
 const disable=() => {
    document.getElementById("guessField").disabled = true;
    document.getElementById("myBtn2").disabled = true;
@@ -21,11 +21,15 @@ const restart=() => {
    document.getElementById("myBtn1").disabled = true;
 
 }
+// adds setTimout
 const timePat=() => {
    disable();
     timeVar = setTimeout(pat, 3000);
 }
+// initalize guessees
 let numGuesses = 1
+
+// big boy function- controls the verything
 const pat=() => { 
   
 // number guessed      
