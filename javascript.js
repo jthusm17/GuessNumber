@@ -5,10 +5,12 @@ console.log("the number is " + autoNum);
 //button stuff + input + restart
 const disable=() => {
    document.getElementById("guessField").disabled = true;
+   document.getElementById("myBtn2").disabled = true;
    console.log("did disable");
    }
 const enable=() => {
    document.getElementById("guessField").disabled = false;
+   document.getElementById("myBtn2").disabled = false;
    console.log("did enable");
    }
 const restart=() => {
@@ -18,8 +20,8 @@ const restart=() => {
    document.getElementById("guess2").innerHTML = "Guess# 1";
    document.getElementById("guess1").innerHTML = "...";
    document.getElementById("myBtn1").disabled = true;
-   document.getElementById("guessField").hidden = false;
    document.getElementById("myBtn2").disabled = false;
+   document.getElementById("guessField").hidden = false;
    document.getElementById("lbl").innerHTML = "Guess a Number";
    document.getElementById("bottomT").innerHTML = "Input your guess into the text box above."; 
    console.log("buttons/lbl/textfield should have changed");
@@ -41,6 +43,7 @@ const pat=() => {
 let Guess = document.getElementById("guessField").value; 
 console.log(Guess);
 
+enable();
 if(Guess == autoNum) 
 {   
 document.getElementById("guess1").innerHTML = " Congrats, u guessed right in '" + numGuesses + "' guess(es)";
@@ -68,5 +71,4 @@ console.log("try bigger")
 document.getElementById("guess2").innerHTML = "Guess #: " + numGuesses;
 
 } 
-enable();
 } 
