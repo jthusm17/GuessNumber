@@ -21,12 +21,14 @@ h4 {
 </style>
 
 <h1>Guess Number between 1 and 15</h1> 
-<h4 id="guess1"></h4> 
+<h4 id="guess2">Guess#: 1</h4>
+<h4 id="guess1">...</h4> 
   
 <div class="form"> 
     <label for="guessField">Enter a guess: </label> 
     <input type = "text" id = "guessField" class = "guessField"> 
-    <button type="button" onclick="timePat()">Submit</button> 
+    <button type="button" enabled id="myBtn2" onclick="timePat()">Submit</button>
+    <button type="button" disabled id="myBtn1" onclick="restart()">restart</button> 
 </div> 
   
 <script src="javascript.js"></script>
@@ -35,5 +37,5 @@ h4 {
 <p>Input your guess into the text box above.</p>
 
 </body>
- 
+
 </html>
