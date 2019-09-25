@@ -1,5 +1,5 @@
 // random num
-var autoNum = Math.floor(Math.random() * 15 + 1);
+const autoNum = Math.floor(Math.random() * 15 + 1);
 console.log("the number is " + autoNum); 
 
 function disable() {
@@ -11,12 +11,12 @@ function enable() {
 
 function timePat(){
    disable();
-    timeVar = setTimeout(pat, 2000);
+    timeVar = setTimeout(pat, 3000);
 }
 function pat(){ 
   
 // number guessed      
-var Guess = document.getElementById("guessField").value; 
+const Guess = document.getElementById("guessField").value; 
 console.log(Guess);
 
 if(Guess == autoNum) 
