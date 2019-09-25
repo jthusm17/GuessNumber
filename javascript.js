@@ -16,15 +16,16 @@ const enable=() => {
 const restart=() => {
    Guess = 0;
    autoNum = Math.floor(Math.random() * 15 + 1);
-   console.log("the number is " + autoNum);
    numGuesses = 1;
    document.getElementById("guess2").innerHTML = "Guess# 1";
    document.getElementById("guess1").innerHTML = "...";
    document.getElementById("myBtn1").disabled = true;
    document.getElementById("guessField").hidden = false;
+   document.getElementById("myBtn2").disabled = false;
    document.getElementById("lbl").innerHTML = "Guess a Number";
    document.getElementById("bottomT").innerHTML = "Input your guess into the text box above."; 
    console.log("buttons/lbl/textfield should have changed");
+   console.log("the number is " + autoNum);
 }
 
 // adds setTimout
@@ -52,6 +53,7 @@ document.getElementById("guessField").value = "";
 document.getElementById("guessField").hidden = true; 
 document.getElementById("lbl").innerHTML = "Press 'Restart' to play again!";
 document.getElementById("bottomT").innerHTML = " ";
+document.getElementById("myBtn2").disabled = true;
 } 
 else if(Guess > autoNum)  
 { 
