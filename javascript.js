@@ -6,10 +6,12 @@ console.log("the number is " + autoNum);
 const disable=() => {
    document.getElementById("guessField").disabled = true;
    document.getElementById("myBtn2").disabled = true;
+   console.log("did disable");
    }
 const enable=() => {
    document.getElementById("guessField").disabled = false;
    document.getElementById("myBtn2").disabled = false;
+   console.log("did enable");
    }
 const restart=() => {
    Guess = 0;
@@ -19,8 +21,11 @@ const restart=() => {
    document.getElementById("guess2").innerHTML = "Guess# 1";
    document.getElementById("guess1").innerHTML = "...";
    document.getElementById("myBtn1").disabled = true;
-
+   document.getElementById("guessField").hidden = false;
+   document.getElementById("lbl").innerHTML = "Guess a Number"; 
+   console.log("buttons/lbl/textfield should have changed");
 }
+
 // adds setTimout
 const timePat=() => {
    disable();
@@ -38,10 +43,13 @@ console.log(Guess);
 
 if(Guess == autoNum) 
 {   
-document.getElementById("guess1").innerHTML = " Congrats, u guessed right in " + numGuesses + " guesses";
+document.getElementById("guess1").innerHTML = " Congrats, u guessed right in '" + numGuesses + "' guess(es)";
 console.log("congrats you got it right in " + numGuesses)
 document.getElementById("guess2").innerHTML = "Guess#: " + numGuesses;
-document.getElementById("myBtn1").disabled = false;    
+document.getElementById("myBtn1").disabled = false; 
+document.getElementById("guessField").value = "0";  
+document.getElementById("guessField").hidden = true; 
+document.getElementById("lbl").innerHTML = "Press 'Restart' to play again!";
 } 
 else if(Guess > autoNum)  
 { 
