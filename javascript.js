@@ -22,7 +22,8 @@ const restart=() => {
    document.getElementById("guess1").innerHTML = "...";
    document.getElementById("myBtn1").disabled = true;
    document.getElementById("guessField").hidden = false;
-   document.getElementById("lbl").innerHTML = "Guess a Number"; 
+   document.getElementById("lbl").innerHTML = "Guess a Number";
+   document.getElementById("bottomT").innerHTML = "Input your guess into the text box above."; 
    console.log("buttons/lbl/textfield should have changed");
 }
 
@@ -47,9 +48,10 @@ document.getElementById("guess1").innerHTML = " Congrats, u guessed right in '" 
 console.log("congrats you got it right in " + numGuesses)
 document.getElementById("guess2").innerHTML = "Guess#: " + numGuesses;
 document.getElementById("myBtn1").disabled = false; 
-document.getElementById("guessField").value = "0";  
+document.getElementById("guessField").value = "";  
 document.getElementById("guessField").hidden = true; 
 document.getElementById("lbl").innerHTML = "Press 'Restart' to play again!";
+document.getElementById("bottomT").innerHTML = " ";
 } 
 else if(Guess > autoNum)  
 { 

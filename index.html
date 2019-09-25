@@ -19,15 +19,18 @@
 h4 {
     color: purple;
     }
+body {
+    background-color:black;
+}
 </style>
 <div class="container">
-    <h1>Guess Number between 1 and 15</h1> 
+    <h1 class="text-primary">Guess Number between 1 and 15</h1> 
     <h4 id="guess2">Guess#: 1</h4>
     <h4 id="guess1">...</h4> 
 </div>
 
 <div class="container"> 
-    <label id="lbl" for="guessField">Guess a Number: </label> 
+    <label id="lbl" for="guessField" class="text-success">Guess a Number: </label> 
     <input type = "text" id = "guessField" class = "guessField"> 
     <button type="button" enabled id="myBtn2" class="btn btn-primary btn-lg crazy fast" onclick="timePat()">
         <span id="spindin" aria-hidden="true" class="spinner-border spinner-border-sm"></span>
@@ -40,7 +43,7 @@ h4 {
 
 
 <div class="container">
-    <p>Input your guess into the text box above.</p>
+    <p id="bottomT" class="text-primary">Input your guess into the text box above.</p>
 </div>
 </body>
 
