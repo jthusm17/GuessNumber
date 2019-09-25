@@ -3,15 +3,15 @@ let autoNum = Math.floor(Math.random() * 15 + 1);
 console.log("the number is " + autoNum);
 
 
-function disable() {
+const disable=() => {
    document.getElementById("guessField").disabled = true;
    document.getElementById("myBtn2").disabled = true;
    }
-function enable() {
+const enable=() => {
    document.getElementById("guessField").disabled = false;
    document.getElementById("myBtn2").disabled = false;
    }
-function restart() {
+const restart=() => {
    Guess = 0;
    autoNum = Math.floor(Math.random() * 15 + 1);
    console.log("the number is " + autoNum);
@@ -21,12 +21,12 @@ function restart() {
    document.getElementById("myBtn1").disabled = true;
 
 }
-function timePat(){
+const timePat=() => {
    disable();
     timeVar = setTimeout(pat, 3000);
 }
 let numGuesses = 1
-function pat(){ 
+const pat=() => { 
   
 // number guessed      
 let Guess = document.getElementById("guessField").value; 
