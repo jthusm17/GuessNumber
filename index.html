@@ -25,17 +25,17 @@ body {
 </style>
 <div class="container">
     <h1 class="text-primary">Guess Number between 1 and 15</h1> 
-    <h4 id="guess2">Guess#: 1</h4>
-    <h4 id="guess1">...</h4> 
+    <h4 id="guessCount">Guess# 1</h4>
+    <h4 id="helpText">...</h4> 
 </div>
 
 <div class="container"> 
-    <label id="lbl" for="guessField" class="text-success">Guess a Number: </label> 
+    <label id="sideLabel" for="guessField" class="text-success">Guess a Number: </label> 
     <input type = "text" id = "guessField" class = "guessField"> 
-    <button id="myBtn2" class="btn btn-primary btn-lg crazy fast" enabled onclick="timePat()">
-        <span id="spindin" class="spinner-border spinner-border-sm"></span>
-        Submit</button>
-    <button disabled id="myBtn1" class="btn btn-info" onclick="restart()">restart
+    <button id="submitBtn" class="btn btn-primary btn-lg crazy fast" enabled onclick="timePat()">
+        <span id="spinner"  hidden class="spinner-border spinner-border-sm"></span>
+        Submit</button> 
+    <button hidden disabled id="restartBtn" class="btn btn-lg btn-info" onclick="restart()">Restart
     </button> 
 </div> 
   
@@ -43,7 +43,7 @@ body {
 
 
 <div class="container">
-    <p id="bottomT" class="text-primary">Input your guess into the text box above.</p>
+    <p id="bottomText" class="text-primary">Input your guess into the text box above.</p>
 </div>
 </body>
 
