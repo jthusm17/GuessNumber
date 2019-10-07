@@ -10,6 +10,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 </head> 
   
@@ -31,20 +32,20 @@ body {
 
 <div class="container"> 
     <label id="sideLabel" for="guessField" class="text-success">Guess a Number: </label> 
-    <input type = "text" id = "guessField" class = "guessField"> 
-    <button id="submitBtn" class="btn btn-primary btn-lg crazy fast" enabled onclick="timePat()">
-        <span id="spinner"  hidden class="spinner-border spinner-border-sm"></span>
+    <input type = "text" id = "guessField" class = "guessField" value = ""> 
+    <button id="submitBtn" class="btn btn-primary btn-lg crazy fast" enabled>
+        <span id="spinner"  class="spinner-border spinner-border-sm"></span>
         Submit</button> 
-    <button hidden disabled id="restartBtn" class="btn btn-lg btn-info" onclick="restart()">Restart
+    <button id="restartBtn" class="btn btn-lg btn-info" >Restart
     </button> 
 </div> 
-  
-<script src="javascript.js"></script>
-
 
 <div class="container">
     <p id="bottomText" class="text-primary">Input your guess into the text box above.</p>
 </div>
+
+<script src="javascript.js"></script>
+
 </body>
 
 </html>
