@@ -85,7 +85,11 @@ if(numGuesses == 1 )
 {
    helpText.text("Congrats, you guessed right in '" + numGuesses + "' guess");
 }
-} 
+}
+else if(guess < 1) {
+   helpText.text("Invalid. Use number above 0");
+   console.log("Invalid input = " + guess + ". Guess not counted");
+}
 else if(guess > autoNum)  
 { 
 numGuesses++; 
